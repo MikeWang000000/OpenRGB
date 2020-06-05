@@ -191,6 +191,7 @@ INCLUDEPATH +=                                                                  
     Controllers/ZotacTuringGPUController/                                                       \
     Controllers/ZotacV2GPUController/                                                           \
     KeyboardLayoutManager/                                                                      \
+    FanController/                                                                              \
     RGBController/                                                                              \
     qt/
 
@@ -232,6 +233,7 @@ HEADERS +=                                                                      
     qt/OpenRGBDialog2.h                                                                         \
     qt/OpenRGBElgatoKeyLightSettingsPage/OpenRGBElgatoKeyLightSettingsEntry.h                   \
     qt/OpenRGBElgatoKeyLightSettingsPage/OpenRGBElgatoKeyLightSettingsPage.h                    \
+    qt/OpenRGBFanPage.h                                                                         \
     qt/OpenRGBHardwareIDsDialog.h                                                               \
     qt/OpenRGBKasaSmartSettingsPage/OpenRGBKasaSmartSettingsEntry.h                             \
     qt/OpenRGBKasaSmartSettingsPage/OpenRGBKasaSmartSettingsPage.h                              \
@@ -709,6 +711,7 @@ HEADERS +=                                                                      
     Controllers/ThermaltakePoseidonZRGBController/RGBController_ThermaltakePoseidonZRGB.h       \
     Controllers/ThermaltakeRiingController/ThermaltakeRiingController.h                         \
     Controllers/ThermaltakeRiingController/ThermaltakeRiingQuadController.h                     \
+    Controllers/ThermaltakeRiingController/FanController_ThermaltakeRiing.h                     \
     Controllers/ThermaltakeRiingController/RGBController_ThermaltakeRiing.h                     \
     Controllers/ThingMController/BlinkController.h                                              \
     Controllers/ThingMController/RGBController_BlinkController.h                                \
@@ -738,6 +741,7 @@ HEADERS +=                                                                      
     Controllers/ZotacV2GPUController/ZotacV2GPUController.h                                     \
     Controllers/ZotacV2GPUController/RGBController_ZotacV2GPU.h                                 \
     KeyboardLayoutManager/KeyboardLayoutManager.h                                               \
+    FanController/FanController.h                                                               \
     RGBController/RGBController.h                                                               \
     RGBController/RGBController_Dummy.h                                                         \
     RGBController/RGBControllerKeyNames.h                                                       \
@@ -810,6 +814,7 @@ SOURCES +=                                                                      
     qt/OpenRGBDialog2.cpp                                                                       \
     qt/OpenRGBElgatoKeyLightSettingsPage/OpenRGBElgatoKeyLightSettingsEntry.cpp                 \
     qt/OpenRGBElgatoKeyLightSettingsPage/OpenRGBElgatoKeyLightSettingsPage.cpp                  \
+    qt/OpenRGBFanPage.cpp                                                                       \
     qt/OpenRGBHardwareIDsDialog.cpp                                                             \
     qt/OpenRGBKasaSmartSettingsPage/OpenRGBKasaSmartSettingsEntry.cpp                           \
     qt/OpenRGBKasaSmartSettingsPage/OpenRGBKasaSmartSettingsPage.cpp                            \
@@ -1398,6 +1403,7 @@ SOURCES +=                                                                      
     Controllers/ThermaltakeRiingController/ThermaltakeRiingController.cpp                       \
     Controllers/ThermaltakeRiingController/ThermaltakeRiingQuadController.cpp                   \
     Controllers/ThermaltakeRiingController/ThermaltakeRiingControllerDetect.cpp                 \
+    Controllers/ThermaltakeRiingController/FanController_ThermaltakeRiing.cpp                   \
     Controllers/ThermaltakeRiingController/RGBController_ThermaltakeRiing.cpp                   \
     Controllers/ThingMController/ThingMControllerDetect.cpp                                     \
     Controllers/ThingMController/BlinkController.cpp                                            \
@@ -1479,6 +1485,7 @@ FORMS +=                                                                        
     qt/OpenRGBDevicePage.ui                                                                     \
     qt/OpenRGBDialog.ui                                                                         \
     qt/OpenRGBDialog2.ui                                                                        \
+    qt/OpenRGBFanPage.ui                                                                        \
     qt/OpenRGBHardwareIDsDialog.ui                                                              \
     qt/OpenRGBPluginContainer.ui                                                                \
     qt/OpenRGBProfileSaveDialog.ui                                                              \
