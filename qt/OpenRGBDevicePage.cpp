@@ -74,6 +74,9 @@ OpenRGBDevicePage::OpenRGBDevicePage(RGBController *dev, QWidget *parent) :
     std::string         ui_string           = "UserInterface";
     json                ui_settings;
 
+    json                ui_settings_proto;
+    settings_manager->RegisterSettingsPrototype(ui_string, ui_settings_proto);
+
     ui_settings = settings_manager->GetSettings(ui_string);
 
     if(ui_settings.contains("numerical_labels"))

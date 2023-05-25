@@ -415,6 +415,11 @@ OpenRGBDialog2::OpenRGBDialog2(QWidget *parent) : QMainWindow(parent), ui(new Op
     AddSettingsPage();
 
     /*-----------------------------------------------------*\
+    | Add the settings manager page                         |
+    \*-----------------------------------------------------*/
+    AddSettingsManagerPage();
+
+    /*-----------------------------------------------------*\
     | Add the Supported Devices page                        |
     \*-----------------------------------------------------*/
     AddSupportedDevicesPage();
@@ -760,6 +765,34 @@ void OpenRGBDialog2::AddSettingsPage()
     \*-----------------------------------------------------*/
     connect(SettingsPage, SIGNAL(TrayIconChanged(bool)), this, SLOT(SetTrayIcon(bool)));
     connect(this, SIGNAL(ProfileListChanged()), SettingsPage, SLOT(UpdateProfiles()));
+}
+
+void OpenRGBDialog2::AddSettingsManagerPage()
+{
+    /*-----------------------------------------------------*\
+    | Create the SettingsManager page                       |
+    \*-----------------------------------------------------*/
+    SettingsManagerPage = new OpenRGBSettingsManagerPage();
+
+    ui->SettingsTabBar->addTab(SettingsManagerPage, "");
+
+    QString SettingsLabelString;
+
+    if(OpenRGBThemeManager::IsDarkTheme())
+    {
+        SettingsLabelString = "settings_dark.png";
+    }
+    else
+    {
+        SettingsLabelString = "settings.png";
+    }
+
+    /*-----------------------------------------------------*\
+    | Create the tab label                                  |
+    \*-----------------------------------------------------*/
+    TabLabel* SettingsTabLabel = new TabLabel(SettingsLabelString, tr("Settings Manager"), (char *)"Settings Manager", (char *)context);
+
+    ui->SettingsTabBar->tabBar()->setTabButton(ui->SettingsTabBar->tabBar()->count() - 1, QTabBar::LeftSide, SettingsTabLabel);
 }
 
 void OpenRGBDialog2::AddDMXSettingsPage()

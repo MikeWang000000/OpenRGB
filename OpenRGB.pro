@@ -259,6 +259,8 @@ HEADERS +=                                                                      
     qt/OpenRGBQMKORGBSettingsPage/OpenRGBQMKORGBSettingsPage.h                                  \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsEntry.h                                   \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsPage.h                                    \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerEntry.h                                 \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerPage.h                                  \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsEntry.h                               \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsPage.h                                \
     qt/OpenRGBZonesBulkResizer.h                                                                \
@@ -823,6 +825,8 @@ SOURCES +=                                                                      
     qt/OpenRGBQMKORGBSettingsPage/OpenRGBQMKORGBSettingsPage.cpp                                \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsEntry.cpp                                 \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsPage.cpp                                  \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerEntry.cpp                               \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerPage.cpp                                \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsEntry.cpp                             \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsPage.cpp                              \
     serial_port/serial_port.cpp                                                                 \
@@ -1462,6 +1466,8 @@ FORMS +=                                                                        
     qt/OpenRGBQMKORGBSettingsPage/OpenRGBQMKORGBSettingsPage.ui                                 \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsEntry.ui                                  \
     qt/OpenRGBSerialSettingsPage/OpenRGBSerialSettingsPage.ui                                   \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerEntry.ui                                \
+    qt/OpenRGBSettingsManagerPage/OpenRGBSettingsManagerPage.ui                                 \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsEntry.ui                              \
     qt/OpenRGBYeelightSettingsPage/OpenRGBYeelightSettingsPage.ui                               \
     qt/OpenRGBZonesBulkResizer.ui                                                               \
