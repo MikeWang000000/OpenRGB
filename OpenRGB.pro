@@ -1646,6 +1646,7 @@ win32:SOURCES +=                                                                
     Controllers/AsusTUFLaptopController/AsusTUFLaptopController.cpp                             \
     Controllers/AsusTUFLaptopController/AsusTUFLaptopWMIDetect.cpp                              \
     Controllers/AsusTUFLaptopController/RGBController_AsusTUFLaptopWMI.cpp                      \
+    Controllers/AsusTUFLaptopController/FanController_AsusTUFLaptopWMI.cpp                      \
     Controllers/ENESMBusController/XPGSpectrixS40GDetect_Windows.cpp                            \
     Controllers/ENESMBusController/ENESMBusInterface/ENESMBusInterface_SpectrixS40G_Windows.cpp \
     Controllers/NVIDIAIlluminationController/nvapi_accessor.cpp                                 \
@@ -1669,6 +1670,7 @@ win32:HEADERS +=                                                                
     AutoStart/AutoStart-Windows.h                                                               \
     Controllers/AsusTUFLaptopController/AsusTUFLaptopController.h                               \
     Controllers/AsusTUFLaptopController/RGBController_AsusTUFLaptopWMI.h                        \
+    Controllers/AsusTUFLaptopController/FanController_AsusTUFLaptopWMI.h                        \
     Controllers/ENESMBusController/ENESMBusInterface/ENESMBusInterface_SpectrixS40G_Windows.h   \
     Controllers/NVIDIAIlluminationController/nvapi_accessor.h                                   \
     Controllers/NVIDIAIlluminationController/NVIDIAIlluminationV1Controller.h                   \
