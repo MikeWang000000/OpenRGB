@@ -28,7 +28,9 @@ struct fusion2_config
 enum
 {
     RGB_FUSION2_GPU_REG_COLOR            = 0x40,
-    RGB_FUSION2_GPU_REG_MODE             = 0x88
+    RGB_FUSION2_GPU_REG_MODE             = 0x88,
+    RGB_FUSION2_GPU_REG_COLOR_LEFT_MID   = 0xB0,
+    RGB_FUSION2_GPU_REG_COLOR_RIGHT      = 0xB1
 };
 
 enum
@@ -65,6 +67,7 @@ public:
 
     uint8_t         zone_led_count[4];
     uint8_t         zone_modes[4];
+    RGBColor        zone_color[4];
 
     std::string     GetDeviceLocation();
 
